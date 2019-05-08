@@ -3,19 +3,9 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>https://fengcai-sun.github.io/2018/0.48-relnotes/</loc>
+      <loc>https://fengcai-sun.github.io/2019/%E8%B7%A8%E5%9F%9F%E8%AE%BF%E9%97%AEapi/</loc>
       
-      <lastmod>2018-08-29T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/2018/0.47.1-relnotes/</loc>
-      
-      <lastmod>2018-08-20T00:00:00+00:00</lastmod>
+      <lastmod>2019-05-08T14:18:53+08:00</lastmod>
       
       
       
@@ -23,19 +13,9 @@
     </url>
   
     <url>
-      <loc>https://fengcai-sun.github.io/2018/0.47-relnotes/</loc>
+      <loc>https://fengcai-sun.github.io/2019/js%E7%9A%84ajax%E6%96%B9%E5%BC%8F/</loc>
       
-      <lastmod>2018-08-17T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/2018/0.46-relnotes/</loc>
-      
-      <lastmod>2018-08-01T00:00:00+00:00</lastmod>
+      <lastmod>2019-05-08T14:01:43+08:00</lastmod>
       
       
       
@@ -43,69 +23,9 @@
     </url>
   
     <url>
-      <loc>https://fengcai-sun.github.io/2018/0.45.1-relnotes/</loc>
+      <loc>https://fengcai-sun.github.io/2019/%E6%96%B9%E6%B3%95%E8%B6%85%E6%97%B6%E6%94%BE%E5%BC%83%E6%89%A7%E8%A1%8C/</loc>
       
-      <lastmod>2018-07-25T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/2018/0.45-relnotes/</loc>
-      
-      <lastmod>2018-07-22T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/2018/0.44-relnotes/</loc>
-      
-      <lastmod>2018-07-13T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/2018/0.43-relnotes/</loc>
-      
-      <lastmod>2018-07-09T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/2017/http2-server-push-in-hugo/</loc>
-      
-      <lastmod>2017-07-24T18:36:00+02:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/2014/creating-a-new-theme/</loc>
-      
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/2014/goisforlovers/</loc>
-      
-      <lastmod>2014-07-28T00:00:00+00:00</lastmod>
+      <lastmod>2019-05-05T16:58:24+08:00</lastmod>
       
       
       
@@ -123,26 +43,6 @@
     </url>
   
     <url>
-      <loc>https://fengcai-sun.github.io/2014/hugoisforlovers/</loc>
-      
-      <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/2014/migrate-from-jekyll/</loc>
-      
-      <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://fengcai-sun.github.io/categories/</loc>
       
       
@@ -153,23 +53,13 @@
     </url>
   
     <url>
-      <loc>https://fengcai-sun.github.io/tags/hugo/</loc>
+      <loc>https://fengcai-sun.github.io/categories/java/</loc>
       
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+      <lastmod>2019-05-05T16:58:24+08:00</lastmod>
       
       
       
       <priority>0</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/posts/news/</loc>
-      
-      <lastmod>2018-08-29T00:00:00+00:00</lastmod>
-      
-      
       
       
     </url>
@@ -177,19 +67,7 @@
     <url>
       <loc>https://fengcai-sun.github.io/posts/</loc>
       
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      <priority>0</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/categories/releases/</loc>
-      
-      <lastmod>2018-08-29T00:00:00+00:00</lastmod>
+      <lastmod>2019-05-08T14:18:53+08:00</lastmod>
       
       
       
@@ -201,7 +79,17 @@
     <url>
       <loc>https://fengcai-sun.github.io/tags/</loc>
       
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://fengcai-sun.github.io/tags/ajax/</loc>
+      
+      <lastmod>2019-05-08T14:18:53+08:00</lastmod>
       
       
       
@@ -211,21 +99,9 @@
     </url>
   
     <url>
-      <loc>https://fengcai-sun.github.io/tags/theme/</loc>
+      <loc>https://fengcai-sun.github.io/tags/api/</loc>
       
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      <priority>0</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/categories/uncategorized/</loc>
-      
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+      <lastmod>2019-05-08T14:18:53+08:00</lastmod>
       
       
       
@@ -235,21 +111,9 @@
     </url>
   
     <url>
-      <loc>https://fengcai-sun.github.io/categories/blog/</loc>
+      <loc>https://fengcai-sun.github.io/tags/html/</loc>
       
-      <lastmod>2017-07-24T18:36:00+02:00</lastmod>
-      
-      
-      
-      <priority>0</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/tags/development/</loc>
-      
-      <lastmod>2014-07-28T00:00:00+00:00</lastmod>
+      <lastmod>2019-05-08T14:01:43+08:00</lastmod>
       
       
       
@@ -259,21 +123,9 @@
     </url>
   
     <url>
-      <loc>https://fengcai-sun.github.io/tags/go/</loc>
+      <loc>https://fengcai-sun.github.io/tags/java/</loc>
       
-      <lastmod>2014-07-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      <priority>0</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/tags/golang/</loc>
-      
-      <lastmod>2014-07-28T00:00:00+00:00</lastmod>
+      <lastmod>2019-05-08T14:18:53+08:00</lastmod>
       
       
       
@@ -283,21 +135,9 @@
     </url>
   
     <url>
-      <loc>https://fengcai-sun.github.io/tags/hugo/</loc>
+      <loc>https://fengcai-sun.github.io/tags/thread/</loc>
       
-      <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-      
-      
-      
-      <priority>0</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://fengcai-sun.github.io/tags/templates/</loc>
-      
-      <lastmod>2014-07-28T00:00:00+00:00</lastmod>
+      <lastmod>2019-05-05T16:58:24+08:00</lastmod>
       
       
       
@@ -307,9 +147,21 @@
     </url>
   
     <url>
-      <loc>https://fengcai-sun.github.io/tags/themes/</loc>
+      <loc>https://fengcai-sun.github.io/categories/web/</loc>
       
-      <lastmod>2014-07-28T00:00:00+00:00</lastmod>
+      <lastmod>2019-05-08T14:18:53+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://fengcai-sun.github.io/tags/web/</loc>
+      
+      <lastmod>2019-05-08T14:01:43+08:00</lastmod>
       
       
       
@@ -321,7 +173,7 @@
     <url>
       <loc>https://fengcai-sun.github.io/</loc>
       
-      <lastmod>2018-08-29T00:00:00+00:00</lastmod>
+      <lastmod>2019-05-08T14:18:53+08:00</lastmod>
       
       
       
