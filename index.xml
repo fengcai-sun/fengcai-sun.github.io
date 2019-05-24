@@ -6,8 +6,213 @@
     <description>Recent content in 静心明志 on 静心明志</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 May 2019 17:45:45 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 May 2019 17:37:20 +0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>组合总和</title>
+      <link>https://fengcai-sun.github.io/2019/%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C/</link>
+      <pubDate>Fri, 24 May 2019 17:37:20 +0800</pubDate>
+      
+      <guid>https://fengcai-sun.github.io/2019/%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C/</guid>
+      <description>
+
+&lt;h2 id=&#34;题目&#34;&gt;题目&lt;/h2&gt;
+
+&lt;p&gt;给定一个&lt;strong&gt;无重复元素&lt;/strong&gt;的数组 &lt;code&gt;candidates&lt;/code&gt; 和一个目标数 &lt;code&gt;target&lt;/code&gt; ，找出 &lt;code&gt;candidates&lt;/code&gt; 中所有可以使数字和为 &lt;code&gt;target&lt;/code&gt; 的组合。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;candidates&lt;/code&gt; 中的数字可以无限制重复被选取。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;说明：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;所有数字（包括 &lt;code&gt;target&lt;/code&gt;）都是正整数。&lt;/li&gt;
+&lt;li&gt;解集不能包含重复的组合。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;输入: candidates = [2,3,6,7], target = 7,
+所求解集为:
+[
+  [7],
+  [2,2,3]
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;示例 2:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;输入: candidates = [2,3,5], target = 8,
+所求解集为:
+[
+  [2,2,2,2],
+  [2,3,3],
+  [3,5]
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;class Solution {
+    List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; ans = new ArrayList&amp;lt;&amp;gt;();;
+	
+    public  List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; combinationSum(int[] candidates, int target) {
+    	List&amp;lt;Integer&amp;gt; temp = new ArrayList&amp;lt;Integer&amp;gt;();
+    	getAns(candidates, target, 0, 0, temp);
+        return ans;
+    }
+	
+	private  void getAns(int[] candidates, int target, int pos, int sum, List&amp;lt;Integer&amp;gt; temp) {
+		if(sum==target)
+			ans.add(new ArrayList&amp;lt;&amp;gt;(temp));
+		for(int i=pos; i&amp;lt;candidates.length; i++) {
+			if(sum+candidates[i] &amp;lt;=target) {
+				temp.add(candidates[i]);
+				getAns(candidates, target, i, sum+candidates[i], temp);
+				temp.remove(temp.size()-1);
+			}
+		}
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>829.连续整数求和</title>
+      <link>https://fengcai-sun.github.io/2019/%E8%BF%9E%E7%BB%AD%E6%95%B4%E6%95%B0%E6%B1%82%E5%92%8C/</link>
+      <pubDate>Fri, 24 May 2019 16:59:00 +0800</pubDate>
+      
+      <guid>https://fengcai-sun.github.io/2019/%E8%BF%9E%E7%BB%AD%E6%95%B4%E6%95%B0%E6%B1%82%E5%92%8C/</guid>
+      <description>
+
+&lt;h2 id=&#34;题目&#34;&gt;题目&lt;/h2&gt;
+
+&lt;p&gt;给定一个正整数 &lt;code&gt;N&lt;/code&gt;，试求有多少组连续正整数满足所有数字之和为 &lt;code&gt;N&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;示&lt;/strong&gt;&lt;strong&gt;例 1:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;输入: 5
+输出: 2
+解释: 5 = 5 = 2 + 3，共有两组连续整数([5],[2,3])求和后为 5。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;示例 2:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;输入: 9
+输出: 3
+解释: 9 = 9 = 4 + 5 = 2 + 3 + 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;示例 3:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;输入: 15
+输出: 4
+解释: 15 = 15 = 8 + 7 = 4 + 5 + 6 = 1 + 2 + 3 + 4 + 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;说明:&lt;/strong&gt; &lt;code&gt;1 &amp;lt;= N &amp;lt;= 10 ^ 9&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;class Solution {
+    public int consecutiveNumbersSum(int N) {
+       int res = 0;
+        for (int i = 1; N &amp;gt; 0; N -= i++)
+            if(N % i == 0)
+                res++;
+        return res; 
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>12.整数转罗马数字</title>
+      <link>https://fengcai-sun.github.io/2019/%E6%95%B0%E5%AD%97%E8%BD%AC%E7%BD%97%E9%A9%AC/</link>
+      <pubDate>Fri, 24 May 2019 16:57:00 +0800</pubDate>
+      
+      <guid>https://fengcai-sun.github.io/2019/%E6%95%B0%E5%AD%97%E8%BD%AC%E7%BD%97%E9%A9%AC/</guid>
+      <description>
+
+&lt;h2 id=&#34;题目&#34;&gt;题目&lt;/h2&gt;
+
+&lt;p&gt;罗马数字包含以下七种字符： &lt;code&gt;I&lt;/code&gt;， &lt;code&gt;V&lt;/code&gt;， &lt;code&gt;X&lt;/code&gt;， &lt;code&gt;L&lt;/code&gt;，&lt;code&gt;C&lt;/code&gt;，&lt;code&gt;D&lt;/code&gt; 和 &lt;code&gt;M&lt;/code&gt;。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;字符          数值
+I             1
+V             5
+X             10
+L             50
+C             100
+D             500
+M             1000
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;例如， 罗马数字 2 写做 &lt;code&gt;II&lt;/code&gt; ，即为两个并列的 1。12 写做 &lt;code&gt;XII&lt;/code&gt; ，即为 &lt;code&gt;X&lt;/code&gt; + &lt;code&gt;II&lt;/code&gt; 。 27 写做  &lt;code&gt;XXVII&lt;/code&gt;, 即为 &lt;code&gt;XX&lt;/code&gt; + &lt;code&gt;V&lt;/code&gt; + &lt;code&gt;II&lt;/code&gt; 。&lt;/p&gt;
+
+&lt;p&gt;通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 &lt;code&gt;IIII&lt;/code&gt;，而是 &lt;code&gt;IV&lt;/code&gt;。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 &lt;code&gt;IX&lt;/code&gt;。这个特殊的规则只适用于以下六种情况：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;I&lt;/code&gt; 可以放在 &lt;code&gt;V&lt;/code&gt; (5) 和 &lt;code&gt;X&lt;/code&gt; (10) 的左边，来表示 4 和 9。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;X&lt;/code&gt; 可以放在 &lt;code&gt;L&lt;/code&gt; (50) 和 &lt;code&gt;C&lt;/code&gt; (100) 的左边，来表示 40 和 90。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C&lt;/code&gt; 可以放在 &lt;code&gt;D&lt;/code&gt; (500) 和 &lt;code&gt;M&lt;/code&gt; (1000) 的左边，来表示 400 和 900。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;给定一个整数，将其转为罗马数字。输入确保在 1 到 3999 的范围内。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;输入: 3
+输出: &amp;quot;III&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;示例 2:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;输入: 4
+输出: &amp;quot;IV&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;示例 3:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;输入: 9
+输出: &amp;quot;IX&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;示例 4:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;输入: 58
+输出: &amp;quot;LVIII&amp;quot;
+解释: L = 50, V = 5, III = 3.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;示例 5:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;输入: 1994
+输出: &amp;quot;MCMXCIV&amp;quot;
+解释: M = 1000, CM = 900, XC = 90, IV = 4.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;解决代码&#34;&gt;解决代码&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public static String intToRoman(int num) {
+        String[] keys = new String[]{&amp;quot;M&amp;quot;,&amp;quot;CM&amp;quot;,&amp;quot;D&amp;quot;,&amp;quot;CD&amp;quot;,&amp;quot;C&amp;quot;,&amp;quot;XC&amp;quot;,&amp;quot;L&amp;quot;,&amp;quot;XL&amp;quot;,&amp;quot;X&amp;quot;,&amp;quot;IX&amp;quot;,&amp;quot;V&amp;quot;,&amp;quot;IV&amp;quot;,&amp;quot;I&amp;quot;};
+        int[] values = new int[]{1000,900,500,400,100,90,50,40,10,9,5,4,1};
+        
+        StringBuilder code = new StringBuilder();
+        int beishu = 0;
+        for(int i=0; i&amp;lt;keys.length; i++) {
+            beishu = num / values[i];
+            num = num % values[i];
+            for(int k=0; k&amp;lt;beishu; k++)
+                code.append(keys[i]);
+        }
+        return code.toString();
+    }
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>198.打家劫舍</title>
